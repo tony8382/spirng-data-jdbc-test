@@ -12,7 +12,9 @@ public interface AccountRepository extends CrudRepository<Account, Integer> {
     @Override
     List<Account> findAll();
 
-    @Query("SELECT * FROM account m WHERE m.email = :email")
+    String dd = "SELECT * FROM account m WHERE m.email = :email";
+
+    @Query(dd)
     List<Account> findByEmail(@Param("email") String email);
 
 }
