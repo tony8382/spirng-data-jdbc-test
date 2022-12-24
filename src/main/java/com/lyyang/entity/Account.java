@@ -21,6 +21,6 @@ public class Account {
     private String email;
 
     @MappedCollection(keyColumn = "ID", idColumn = "ACCOUNT_ID")
-    private Set<Message> students;
+    private Set<Message> messages;
 
 }
