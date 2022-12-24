@@ -18,4 +18,9 @@ class AccountRepositoryTest extends SpringJdbcProjectApplicationTests {
     void findAll() {
         log.info("{}", accountRepository.findAll());
     }
+
+    @Test
+    void findByEmail() {
+        log.info("{}",accountRepository.findByEmail("tt12d3@gmail.com"));
+    }
 }
