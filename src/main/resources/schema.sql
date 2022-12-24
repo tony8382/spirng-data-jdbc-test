@@ -1,6 +1,13 @@
+CREATE TABLE IF NOT EXISTS account (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(512) NOT NULL,
+    email VARCHAR(512) NOT NULL,
+    PRIMARY KEY (id)
+);
+
 CREATE TABLE IF NOT EXISTS message (
     id INT NOT NULL AUTO_INCREMENT,
-    username VARCHAR(15) NOT NULL,
+    account_id INT NOT NULL,
     millis BIGINT NOT NULL,
     blabla VARCHAR(512) NOT NULL,
     PRIMARY KEY (id)

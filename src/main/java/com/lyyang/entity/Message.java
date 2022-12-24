@@ -13,7 +13,7 @@ public class Message {
     @Id
     private Integer id;
     @NonNull
-    private String username;
+    private Integer accountId;
     @NonNull
     private Long millis;
     @NonNull

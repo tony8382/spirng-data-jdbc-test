@@ -18,7 +18,7 @@ class MessageRepositoryTest extends SpringJdbcProjectApplicationTests {
     public void messageRepository() {
         messageRepository.save(
                 new Message(
-                        "caterpillar",
+                        1,
                         1518666769369L,
                         "JavaScript 名稱空間管理 https://openhome.cc/Gossip/ECMAScript/NameSpace.html"
                 )
