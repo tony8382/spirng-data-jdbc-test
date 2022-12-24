@@ -1,4 +1,4 @@
-CREATE TABLE message (
+CREATE TABLE IF NOT EXISTS message (
     id INT NOT NULL AUTO_INCREMENT,
     username VARCHAR(15) NOT NULL,
     millis BIGINT NOT NULL,
